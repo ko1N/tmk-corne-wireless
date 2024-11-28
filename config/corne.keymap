@@ -89,7 +89,7 @@
                   >;
                 };
                 gaming_layer_lower { // #5
-                  display-name = "G Lower";
+                  display-name = "GLower";
                   bindings = <
   &trans     &trans  &trans  &kp N1    &kp N2    &kp N3     &kp N1  &kp N2  &kp N3     &kp N0    &kp HOME  &kp DEL
   &kp LALT   &trans  &trans  &trans    &kp N4    &kp N5     &kp N4  &kp N5  &kp N6     &kp COMMA &trans    &kp F10
@@ -98,7 +98,7 @@
                   >;
                 };
                 gaming_layer_raise { // #6
-                  display-name = "G Raise";
+                  display-name = "GRaise";
                   bindings = <
   &trans    &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp DEL
   &kp LALT  &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
@@ -107,7 +107,7 @@
                   >;
                 };
                 gaming_layer_special { // #7
-                  display-name = "G Special";
+                  display-name = "GSpecial";
                   bindings = <
   &trans     &trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans     &trans    &trans    &trans
   &trans     &trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans     &trans    &trans    &trans
