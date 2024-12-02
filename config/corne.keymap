@@ -33,9 +33,9 @@
                         display-name = "Base";
                         bindings = <
   &kp TAB     &kp Q   &kp W      &kp E      &kp R      &kp T     &kp Z   &kp U      &kp I      &kp O      &kp P    &kp BSPC
-  &kp LGUI    &kp A   &hm LALT S &hm LGUI D &hm LCTL F &kp G     &kp H   &hm RCTL J &hm RGUI K &hm RALT L &kp SEMI &kp SQT
+  &kp ESC     &kp A   &hm LALT S &hm LGUI D &hm LCTL F &kp G     &kp H   &hm RCTL J &hm RGUI K &hm RALT L &kp SEMI &kp SQT
   &kp LSHFT   &kp Y   &kp X      &kp C      &kp V      &kp B     &kp N   &kp M      &kp COMMA  &kp DOT    &kp FSLH &kp ESC
-                                 &kp LCTL   &mo 1      &kp SPACE &kp RET &mo 2      &kp RCTL
+                                 &kp LCTL   &mo 1      &kp SPACE &kp RET &mo 2      &kp RGUI
                         >;
                 };
                 lower_layer {
@@ -46,10 +46,10 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         display-name = "Lower";
                         bindings = <
-  &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp DEL
-  &kp LGUI   &trans       &trans       &trans       &trans       &trans         &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-  &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                                       &kp LALT     &trans       &kp SPACE      &kp RET  &mo 3    &kp RALT
+  &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6    &kp N7    &kp N8   &kp N9     &kp N0 &kp DEL
+  &kp ESC    &trans       &trans       &trans       &trans       &trans         &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &trans &trans
+  &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans    &trans    &trans   &trans     &trans &trans
+                                       &trans       &trans       &trans         &trans    &mo 3     &trans
                         >;
                 };
 
@@ -62,9 +62,9 @@
                         display-name = "Raise";
                         bindings = <
   &kp TAB   &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp DEL
-  &kp LGUI  &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
+  &kp ESC   &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                            &kp LALT &mo 3       &kp SPACE &kp RET   &trans          &kp RALT
+                            &trans   &mo 3    &trans      &trans   &trans    &trans
                         >;
                 };
                 special_layer {
@@ -73,7 +73,7 @@
   &kp TAB    &kp F1       &kp F2       &kp F3       &kp F4       &kp F5         &kp F6   &kp F7    &kp F8  &kp F9     &kp F10  &kp F11
   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN  &kp UP  &kp RIGHT  &trans   &kp F12
   &kp LSHFT  &tog 4       &trans       &trans       &trans       &trans         &trans   &trans    &trans  &trans     &trans   &trans
-                                       &kp LALT     &trans       &kp SPACE      &kp RET  &trans    &kp RALT
+                                       &trans       &trans       &trans         &trans   &trans    &trans
                   >;
                 };
 
@@ -88,15 +88,19 @@
                              &kp LCTL  &mo 5     &kp SPACE  &kp RET &mo 6   &kp RGUI
                   >;
                 };
+
                 gaming_layer_lower { // #5
                   display-name = "GLower";
                   bindings = <
-  &trans     &trans    &kp UP    &kp N1    &kp N2    &kp N3     &kp N1  &kp N2  &kp N3     &kp N0    &kp HOME  &kp DEL
-  &kp LALT   &kp LEFT  &kp DOWN  &kp RIGHT    &kp N4    &kp N5     &kp N4  &kp N5  &kp N6     &kp COMMA &trans    &kp F10
-  &trans     &trans    &trans    &trans    &kp MINUS &kp PLUS   &kp N7  &kp N8  &kp N9     &kp DOT   &trans    &kp TILDE
-                                 &trans    &trans    &trans     &trans  &mo 7   &trans
+  &trans     &trans    &kp UP    &kp N1     &kp N2    &kp N3     &kp N1  &kp N2  &kp N3     &kp N0    &kp HOME  &kp DEL
+  &kp LALT   &kp LEFT  &kp DOWN  &kp RIGHT  &kp N4    &kp N5     &kp N4  &kp N5  &kp N6     &kp COMMA &trans    &kp F10
+  &trans     &trans    &trans    &trans     &kp MINUS &kp PLUS   &kp N7  &kp N8  &kp N9     &kp DOT   &trans    &kp TILDE
+                                 &trans     &trans    &trans     &trans  &mo 7   &trans
                   >;
                 };
+
+                // Gaming - Raise
+                // This basically is a copy of layer_raise with special key tweaks for the gaming layer
                 gaming_layer_raise { // #6
                   display-name = "GRaise";
                   bindings = <
@@ -106,6 +110,9 @@
                             &trans   &mo 7    &trans      &trans    &trans    &trans
                   >;
                 };
+
+                // Gaming - Special
+                // Just an empty layer to exit out of gaming mode
                 gaming_layer_special { // #7
                   display-name = "GSpecial";
                   bindings = <
